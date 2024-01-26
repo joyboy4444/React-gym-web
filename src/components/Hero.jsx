@@ -5,7 +5,7 @@ import hero_image from '../../photo/kindpng_615159.png'
 import BMI from './BMI/BMI'
 
 import { motion } from 'framer-motion'
-const Hero = ({Bmi}) => {
+const Hero = () => {
   const [buttonPopup, setButtonPopup] = useState(false);
   const transition = {type: 'spring', duration : 3}
 
