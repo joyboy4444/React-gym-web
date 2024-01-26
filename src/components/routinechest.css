@@ -1,0 +1,23 @@
+.pushday-con{
+    gap: 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pushday-con h2{
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.pushday-con p{
+    color: var(--lightgray);
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+

@@ -1,0 +1,33 @@
+[
+    {
+        "id":1,
+        "ท่าในการเล่น" : "Flat BB bench press",
+        "จำนวน" : "4set/8"
+    },
+    {
+        "id":2,
+        "ท่าในการเล่น" : "Incline DB press",
+        "จำนวน" : "4set/8"
+    },
+    {
+        "id":3,
+        "ท่าในการเล่น" : "Flat DB press",
+        "จำนวน" : "4set/8"
+    },
+    {
+        "id":4,
+        "ท่าในการเล่น" : "Seated DB shoulder press",
+        "จำนวน" : "4set/8"
+    },
+    {
+        "id":5,
+        "ท่าในการเล่น" : "Seated DB site lateral raise",
+        "จำนวน" : "4set/8-10"
+    },
+    {
+        "id":6,
+        "ท่าในการเล่น" : "overhead db extensions",
+        "จำนวน" : "4set/8"
+    }
+    
+]

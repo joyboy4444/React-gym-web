@@ -1,0 +1,94 @@
+.Testimonials {
+    display: flex;
+    gap: 1rem;
+    padding: 0 5rem;
+}
+
+.left-t{
+    display: flex;
+    flex: 1 1;
+    gap: 1rem;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: white;
+}
+
+.left-t>:nth-child(1){
+    color: var(--red);
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.left-t>:nth-child(2),.left-t>:nth-child(3){
+    font-weight: bold;
+    font-size: 6rem;
+}
+
+.left-t>:nth-child(4){
+    text-transform: none;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 40px;
+    font-size: 1.5rem;
+}
+
+.left-t>:nth-child(5){
+    font-size: 1.20rem;
+}
+
+.right-t{
+    flex: 1;
+    position: relative;
+}
+
+.right-t>img{
+    position: absolute;
+    width: 352px;
+    height: 400px;
+    object-fit: cover;
+    right: 8rem;
+    top: 2rem;
+
+}
+
+.right-t>:nth-child(1)
+{
+    position: absolute;
+    width: 22rem;
+    height: 25rem;
+    border: 2px solid red;
+    background-color: transparent;
+    right: 11rem;
+    top: 0.1rem;
+}
+
+.right-t>:nth-child(2){
+    position: absolute;
+    width: 22rem;
+    height: 25rem;
+    right: 6rem;
+    top: 4rem;
+    background-color: red;
+}
+
+.arrows{
+    display: flex;
+    gap: 2rem;
+    position: absolute;
+    bottom: -3rem;
+    left: -4rem;
+}
+
+.arrows>img{
+    width: 2.5rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.arrows>:nth-child(1):hover{
+    scale: 1.2;
+}
+
+.arrows>:nth-child(2):hover{
+    scale: 1.2;
+}

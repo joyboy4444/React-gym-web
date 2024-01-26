@@ -1,0 +1,41 @@
+.Footer-container{
+    height: 10rem;
+    margin-top: 10rem;
+}
+
+.footer{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+}
+
+.Footer-container>br{
+    border: 7px solid var(--red);
+}
+
+.social-links{
+    display: flex;
+    gap: 4rem;
+}
+
+.social-links > img{
+    margin-top: 25rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.social-links > img:hover{
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.logo-f>img{
+    width: 30rem;
+    margin-top: -2rem;
+}

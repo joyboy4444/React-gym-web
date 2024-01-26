@@ -1,0 +1,27 @@
+
+.w3-display h2{
+    display: flex;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 700;
+    justify-content: center;
+    margin-bottom: 4rem;
+}   
+
+.w3-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60rem;
+    height: 50vh;
+    color: #fff;
+    position: relative;
+    background-color: transparent;
+    filter: drop-shadow(2px 3px 10px var(--red));
+    border-radius: 10px;
+    margin-bottom: 5rem;
+}
+
+
