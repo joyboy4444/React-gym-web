@@ -6,27 +6,21 @@
 .header{
     display: flex;
     justify-content: center;
-    gap: 8rem;
-}
-
-.header img {
-    width: 25rem;
-    height: auto;
-    margin-top: -7rem;
+    gap: 2rem;
 }
 
 .header-menu{
     list-style: none;
     display: flex;
+    width: 8rem;
     gap: 6rem;
     height: 2rem;
     margin-top: 4rem;
 }
 
 .header-menu li{
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 500;
-    background: transparent;
     text-decoration: none;
     color: white;
 }

@@ -133,7 +133,7 @@
     top: 5rem;
     color: rgb(0, 0, 0);
     font-size: 18px;
-    width: 7rem;
+    width: 10rem;
     border: 2px solid white;
     border-radius: 14px;
     background-color: white;
@@ -150,15 +150,15 @@
     right: 11rem;
     top: 2.5rem;
     color:white;
-    font-size: 20px;
+    font-size: 25px;
     width: 7rem;
 }
 
 .hero-image{
     position: absolute;
-    top: 10rem;
+    top: 11rem;
     right: 10rem;
-    width: 40rem;
+    width: 30rem;
 }
 
 
