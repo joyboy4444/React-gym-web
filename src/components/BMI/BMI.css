@@ -87,3 +87,8 @@ p{
     height: 200px;
 }
 
+@media screen and (max-width: 768px){
+    .app{
+        height: 70vh;
+    }
+}

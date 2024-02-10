@@ -3,11 +3,28 @@ import './hero.css'
 import Header from './Header/Header'
 import hero_image from '../../photo/kindpng_615159.png'
 import BMI from './BMI/BMI'
+import { useNavigate } from 'react-router-dom'
+import { useUserAuth } from '../context/UserAuthContext'
 
 import { motion } from 'framer-motion'
 const Hero = () => {
   const [buttonPopup, setButtonPopup] = useState(false);
   const transition = {type: 'spring', duration : 3}
+
+  const {logOut, user} = useUserAuth();
+
+  console.log(user)
+
+  const navigate = useNavigate();
+
+  const handleLogout = async () => {
+    try{
+      await logOut();
+      navigate('/')
+    }catch(err){
+      console.log(err.message)
+    }
+  }
 
   return (
     <div className="hero" id='Home'>
@@ -33,7 +50,7 @@ const Hero = () => {
                 <span>Strong body</span>
               </div>
               <div className='text-grey'>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero deleniti doloribus sapiente labore reiciendis? Cupiditate odio impedit et quod fugiat.
+              โปรแกรมเราออกแบบมาเพื่อสำหรับมือใหม่ ความเข้มข้นในการเล่นเหนักแต่น้อยจะสร้างกล้ามเนื้อได้ดีแต่เล่นเบาแต่จำนวนเยอะจะเผาไขมันได้ดีกว่า
               </div>
             </div>
         
@@ -57,12 +74,12 @@ const Hero = () => {
           {/*hero-button*/}
           <div className="hero-button">
             <button className="btn" onClick={() => setButtonPopup(true)}>คำนวณBMI</button>
-            <button className="btn">Start</button>
+            <button className="btn">ติดต่อเรา</button>
           </div>
         </div>
         <div className="right-h">
-        <span></span>
-        <button className='btn'>Logout</button>
+          <p>{user.email}</p>
+        <button className='btn' onClick={handleLogout}>Logout</button>
 
           {/*hero-images*/}
           <motion.img 

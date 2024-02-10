@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import './BMI.css'
 import { FaX } from "react-icons/fa6";
 import Table from './../TABLE/table';
+import Hero from './../Hero'
 
-const BMI = (props) => {
+export default function BMI(props) {
 
 
     const [weight, setWeight] = useState(0)
@@ -78,9 +79,9 @@ const BMI = (props) => {
         <>{
             show?<Table Bmi = {bmi}/>:null
         }
+
         </>    
     </div>
   ) :"";
 }
 
-export default BMI

@@ -6,16 +6,26 @@
 .header{
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
+    height: 15rem;
+}
+.header img {
+    position: relative;
+    width: 35rem;
+    object-fit: cover;
+    top: 1rem;
+    right: 8rem;
+    bottom: 3rem;
 }
 
 .header-menu{
     list-style: none;
     display: flex;
-    width: 8rem;
+    width: 3rem;
     gap: 6rem;
     height: 2rem;
     margin-top: 4rem;
+    margin-right: 35rem;
 }
 
 .header-menu li{
@@ -28,4 +38,66 @@
 .header-menu li:hover{
     color: var(--red);
     cursor: pointer;
+}
+
+.arrowup {
+    position: fixed;
+    color: var(--red);
+    font-size: 5rem;
+    margin-left: 140rem;
+    margin-top: 50rem;
+    cursor: pointer;
+    background-color: var(--red);
+    text-align: center;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 70%;
+}
+
+.Arr {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+.Bars {
+    position: absolute;
+    right: 139px;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 768px){
+    
+    .header img {
+        position: relative;
+        width: 20rem;
+        object-fit: cover;
+        top: 1rem;
+        right: 10rem;
+        bottom: 3rem;
+        left: 19.5rem;
+        margin-right: 39rem;
+    }
+    .header-menu{
+        flex-direction: column;
+        background-color: var(--appColor);
+        padding: 2rem;
+        position: fixed;
+        left: 5rem;
+        z-index: 99;
+        font-size: 2rem;
+        width: 10rem;
+        height: auto;
+        gap: 2.5rem;
+    }
+    .header-menu li{
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+        color: white;
+        background-color: transparent;
+        gap: 1rem;
+    }
+    
 }

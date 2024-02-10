@@ -75,8 +75,8 @@
     display: flex;
     gap: 2rem;
     position: absolute;
-    bottom: -3rem;
-    left: -4rem;
+    bottom: -142rem;
+    left: 65rem;
 }
 
 .arrows>img{
@@ -91,4 +91,51 @@
 
 .arrows>:nth-child(2):hover{
     scale: 1.2;
+}
+
+@media screen and (max-width: 768px){
+    .Testimonials{
+        flex-direction: column;
+        margin-top: 7rem;
+    }
+    .left-t>:nth-child(1){
+        align-self: center;
+    }
+    .left-t>:nth-child(2),.left-t>:nth-child(3){
+        font-size: 3rem;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+    .right-t{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .right-t>div{
+        position: relative;
+        display: none;
+    }
+    .right-t>img{
+        top: 0;
+        right: 0;
+        position: relative;
+        align-self: center;
+        width: 300px;
+        height: 350px;
+    }
+    .arrows {
+        margin-left: 14.5rem;
+        position: absolute;
+        bottom: -225rem;
+        left: 1.5rem;
+    }
+    .arrows>img{
+        width: 2rem;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
 }

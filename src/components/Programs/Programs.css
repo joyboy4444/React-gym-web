@@ -87,6 +87,56 @@
 }
 
 
+@media screen and (max-width: 768px){
+    .programs-header {
+        flex-direction: column;
+        font-size: 26px;
+        color: white;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .Programs-Box {
+        display: flex;
+        gap: 2rem;
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .Programs-Box button {
+        width: 22rem;
+        height: 22rem;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        padding: 3px;
+        transition:all 0.5s ;
+        border: 5px solid var(--red);
+        border-radius: 10px;
+    }
+    .Programs-Box button h2{
+        background-color: transparent;
+        font-size: 25px;
+    }
+    .Programs-Box h5 {
+        background: transparent;
+        color: var(--gray);
+        padding: 20px;
+        font-size: 12px;
+    }
+    .Programs-Box button img {
+        width: 90px;
+        background-color: transparent;
+        margin-top: 20px;
+    }
+
+
+}
+
 
 
 

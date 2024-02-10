@@ -83,4 +83,44 @@
     height: 3rem;
 }
 
+@media screen and (max-width: 768px){
+    .Reasons {
+        flex-direction: column;
+    }
+    .left-r{
+        grid-auto-rows: auto;
+        overflow: hidden;
+    }
+    .left-r > :nth-child(1){
+        width: 10rem;
+        height: 23rem;
+    }
+    .left-r > :nth-child(2){
+        width: 17rem;
+        height: 11rem;
+    }
+    .left-r > :nth-child(3){
+        width: 7rem;
+        height: 9rem;
+    }
+    .left-r > :nth-child(4){
+        width: 7rem;
+        height: 9rem;
+    }
+    .right-r>div{
+        color: white;
+        font-weight: bold;
+        font-size: 4rem;
+    }
+    .details-r {
+        margin-right: 5rem;
+        margin-top: 2rem;
+    }
+    .details-r>div{
+        display: flex;
+        font-size: 1.5rem;
+        gap: 1rem;
+    }
+}
+
 

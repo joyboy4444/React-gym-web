@@ -62,7 +62,8 @@ const Testimonials = () => {
             exit={{opacity: 0, x:-100}}
             transition={transition}
             src={testimonialsData[selected].image} alt="" />
-            <div className="arrows">
+        </div>
+        <div className="arrows">
                 <img 
                     onClick=
                     {prevSlide}
@@ -74,7 +75,6 @@ const Testimonials = () => {
                 
                 src={rightArrow} alt="" />
             </div>
-        </div>
     </div>
   )
 }
